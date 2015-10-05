@@ -91,7 +91,7 @@ FROM   supplier S
        INNER JOIN parts P 
                ON P.pid = C.pid 
 WHERE  P.color = 'red' 
-intersect 
+INTERSECT
 SELECT DISTINCT S.sid 
 FROM   supplier S 
        INNER JOIN catalog C 
